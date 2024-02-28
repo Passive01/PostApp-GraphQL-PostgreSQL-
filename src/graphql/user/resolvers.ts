@@ -6,7 +6,6 @@ const mutation = {
         const res = await UserService.createUser(payload);
         return res.id;
     }
-      
 }
 
 const query = {
@@ -24,5 +23,7 @@ const query = {
         throw new Error ("Invalid User")
     }
 }
+
+
 
 export const resolvers =  {query, mutation}
